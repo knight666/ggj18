@@ -9,6 +9,8 @@ public class Bee : MonoBehaviour {
 
 	public float m_distanceMinimum = 1;
 	public float m_distanceMaximum = 2;
+	public List<GameObject> m_overlays = new List<GameObject>();
+	private GameObject m_overlayActive;
 
 	void Start()
 	{
