@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4537715898674990}
   - component: {fileID: 212113830258723722}
   - component: {fileID: 95075914991653784}
-  - component: {fileID: 114002931526235464}
+  - component: {fileID: 114007425903553336}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Untagged
@@ -37,7 +37,7 @@ Transform:
   m_GameObject: {fileID: 1975179183644940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: 1.1395304, y: 1.139531, z: 1.139531}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -59,7 +59,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114002931526235464
+--- !u!114 &114007425903553336
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

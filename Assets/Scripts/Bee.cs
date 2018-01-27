@@ -12,6 +12,8 @@ public class Bee : MonoBehaviour {
 	public List<GameObject> m_overlays = new List<GameObject>();
 	private GameObject m_overlayActive;
 
+	public int m_hits = 0;
+
 	void Start()
 	{
 		m_hexGrid = m_hexGridInstance.GetComponent<HexGrid>();
@@ -52,7 +54,8 @@ public class Bee : MonoBehaviour {
 			}
 		}
 
-		if (nearCrossings.Count > 0)
+		if (nearCrossings.Count > 0 &&
+			!m_overlayActive)
 		{
 			positionFlat.y -= 1;
 
@@ -88,15 +91,27 @@ public class Bee : MonoBehaviour {
 			if (Input.GetKeyDown(KeyCode.LeftArrow) &&
 				leftCrossing)
 			{
-				transform.position = leftCrossing.transform.position;
+				transform.position = new Vector3(leftCrossing.transform.position.x, leftCrossing.transform.position.y, 5);
 				leftCrossing.GetComponent<Crossing>().m_active = true;
+
+				if (++m_hits >= 3)
+				{
+					m_overlayActive = GameObject.Instantiate(m_overlays[0]);
+					m_hits = 0;
+				}
 			}
 
 			if (Input.GetKeyDown(KeyCode.RightArrow) &&
 				rightCrossing)
 			{
-				transform.position = rightCrossing.transform.position;
+				transform.position = new Vector3(rightCrossing.transform.position.x, rightCrossing.transform.position.y, 5);
 				rightCrossing.GetComponent<Crossing>().m_active = true;
+
+				if (++m_hits >= 3)
+				{
+					m_overlayActive = GameObject.Instantiate(m_overlays[0]);
+					m_hits = 0;
+				}
 			}
 		}
 	}
