@@ -45,7 +45,6 @@ public class HexGrid : MonoBehaviour
 		var transforms = GetComponentsInChildren<Transform>();
 		foreach (var transform in transforms)
 		{
-			Debug.Log(transform.gameObject.tag);
 			if (transform.gameObject.tag == "Control")
 			{
 				m_controlPoints.Add(transform.gameObject);
