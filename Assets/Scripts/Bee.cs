@@ -50,16 +50,15 @@ public class Bee : MonoBehaviour {
 			}
 		}
 
-		if (nearCrossings.Count > 0 &&
-			Input.GetKeyDown(KeyCode.A))
+		if (nearCrossings.Count > 0)
 		{
 			positionFlat.y -= 1;
 
-			var greatestAngle = -Mathf.Infinity;
-			GameObject greatestAngleInstance = null;
-
 			var normalUp = new Vector3(0, 1, 0);
 			var normalRight = new Vector3(1, 0, 0);
+
+			GameObject leftCrossing = null;
+			GameObject rightCrossing = null;
 
 			foreach (var crossing in nearCrossings)
 			{
@@ -69,24 +68,33 @@ public class Bee : MonoBehaviour {
 				crossingNormal = crossingNormal - positionFlat;
 				crossingNormal.Normalize();
 
-				/*float angle = Vector3.Angle(positionFlat, crossingFlat) - 180;
-				if (angle > greatestAngle)
+				float dotUp = Vector3.Dot(normalUp, crossingNormal);
+				if (dotUp > 0)
 				{
-					greatestAngle = angle;
-					greatestAngleInstance = crossing;
-				}*/
-
-				float dotRight = Vector3.Dot(normalUp, crossingNormal);
-				float dotUp = Vector3.Dot(normalRight, crossingNormal);
-				if (dotRight > 0)
-				{
-					crossing.GetComponent<Crossing>().m_active = true;
+					float dotRight = Vector3.Dot(normalRight, crossingNormal);
+					if (dotRight > 0)
+					{
+						rightCrossing = crossing;
+					}
+					else
+					{
+						leftCrossing = crossing;
+					}
 				}
 			}
 
-			if (greatestAngleInstance)
+			if (Input.GetKeyDown(KeyCode.LeftArrow) &&
+				leftCrossing)
 			{
-				greatestAngleInstance.GetComponent<Crossing>().m_active = true;
+				transform.position = leftCrossing.transform.position;
+				leftCrossing.GetComponent<Crossing>().m_active = true;
+			}
+
+			if (Input.GetKeyDown(KeyCode.RightArrow) &&
+				rightCrossing)
+			{
+				transform.position = rightCrossing.transform.position;
+				rightCrossing.GetComponent<Crossing>().m_active = true;
 			}
 		}
 	}
