@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Bee : MonoBehaviour {
 
@@ -25,12 +26,32 @@ public class Bee : MonoBehaviour {
 	public GameObject m_buttonRight;
 	private bool m_uiRightClicked = false;
 
+	enum Directions
+	{
+		Left,
+		Right
+	};
+
+	private Directions[][] m_paths = new Directions[3][] {
+		new Directions[] { Directions.Right, Directions.Right, Directions.Left, Directions.Left, Directions.Right, Directions.Left, Directions.Left, Directions.Right, Directions.Right },
+		new Directions[] { Directions.Right, Directions.Left, Directions.Right, Directions.Left, Directions.Left, Directions.Right, Directions.Right, Directions.Right, Directions.Right },
+		new Directions[] { Directions.Left, Directions.Right, Directions.Right, Directions.Right, Directions.Right, Directions.Left, Directions.Left, Directions.Left, Directions.Left }
+	};
+	private List<Directions> m_currentPath = new List<Directions>(9);
+	Directions m_nextDirection;
+
 	void Start()
 	{
 		m_hexGrid = m_hexGridInstance.GetComponent<HexGrid>();
 
 		m_buttonLeft.GetComponent<Button>().onClick.AddListener(UILeftClick);
 		m_buttonRight.GetComponent<Button>().onClick.AddListener(UIRightClick);
+
+		m_currentPath.AddRange(m_paths[0]);
+		m_nextDirection = m_currentPath[0];
+		m_currentPath.RemoveAt(0);
+
+		Debug.Log("nextDirection " + m_nextDirection.ToString());
 	}
 
 	void UILeftClick()
@@ -115,13 +136,27 @@ public class Bee : MonoBehaviour {
 			if ((Input.GetKeyDown(KeyCode.LeftArrow) || m_uiLeftClicked) &&
 				leftCrossing)
 			{
-				HitCrossing(leftCrossing);
+				if (m_nextDirection != Directions.Left)
+				{
+					SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+				}
+				else
+				{
+					HitCrossing(leftCrossing);
+				}
 			}
 
 			if ((Input.GetKeyDown(KeyCode.RightArrow) || m_uiRightClicked) &&
 				rightCrossing)
 			{
-				HitCrossing(rightCrossing);
+				if (m_nextDirection != Directions.Right)
+				{
+					SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+				}
+				else
+				{
+					HitCrossing(rightCrossing);
+				}
 			}
 		}
 
@@ -162,5 +197,10 @@ public class Bee : MonoBehaviour {
 
 			m_hits = 0;
 		}
+
+		m_nextDirection = m_currentPath[0];
+		m_currentPath.RemoveAt(0);
+
+		Debug.Log("nextDirection " + m_nextDirection.ToString());
 	}
 }
