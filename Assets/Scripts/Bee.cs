@@ -152,8 +152,7 @@ public class Bee : MonoBehaviour {
 			else if (
 				m_checkpointIndex == 2)
 			{
-				// TODO: Saxophone
-				//m_audioSaxophone.GetComponent<AudioSource>().mute = false;
+				m_audioSaxophone.GetComponent<AudioSource>().mute = false;
 			}
 
 			if (++m_checkpointIndex > 2)
