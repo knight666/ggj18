@@ -27,6 +27,8 @@ public class HexGrid : MonoBehaviour
 		new Vector3(0f, 0f, outerRadius)
 	};
 
+	public List<GameObject> m_controlPoints = new List<GameObject>();
+
 	HexGrid()
 	{
 		m_cubeRotate *= Matrix4x4.Scale(new Vector3(10.0f, 10.0f, 1.0f));
@@ -35,6 +37,19 @@ public class HexGrid : MonoBehaviour
 		{
 			var angle = Mathf.Deg2Rad * (30.0f + (i * 60.0f));
 			m_corners[i] = m_cubeRotate * new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0.0f);
+		}
+	}
+
+	void Start()
+	{
+		var transforms = GetComponentsInChildren<Transform>();
+		foreach (var transform in transforms)
+		{
+			Debug.Log(transform.gameObject.tag);
+			if (transform.gameObject.tag == "Control")
+			{
+				m_controlPoints.Add(transform.gameObject);
+			}
 		}
 	}
 
