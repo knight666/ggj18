@@ -5,16 +5,8 @@ using UnityEngine;
 public class Overlay
 	: MonoBehaviour
 {
-	void Start()
+	public void DoneEvent(string blah)
 	{
-	}
-
-	void Update()
-	{
-	}
-
-	public void DoneEvent(string s)
-	{
-		Destroy(this);
+		Destroy(gameObject);
 	}
 }
