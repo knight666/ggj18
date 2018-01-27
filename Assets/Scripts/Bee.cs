@@ -91,28 +91,27 @@ public class Bee : MonoBehaviour {
 			if (Input.GetKeyDown(KeyCode.LeftArrow) &&
 				leftCrossing)
 			{
-				transform.position = new Vector3(leftCrossing.transform.position.x, leftCrossing.transform.position.y, 5);
-				leftCrossing.GetComponent<Crossing>().m_active = true;
-
-				if (++m_hits >= 3)
-				{
-					m_overlayActive = GameObject.Instantiate(m_overlays[0]);
-					m_hits = 0;
-				}
+				HitCrossing(leftCrossing);
 			}
 
 			if (Input.GetKeyDown(KeyCode.RightArrow) &&
 				rightCrossing)
 			{
-				transform.position = new Vector3(rightCrossing.transform.position.x, rightCrossing.transform.position.y, 5);
-				rightCrossing.GetComponent<Crossing>().m_active = true;
-
-				if (++m_hits >= 3)
-				{
-					m_overlayActive = GameObject.Instantiate(m_overlays[0]);
-					m_hits = 0;
-				}
+				HitCrossing(rightCrossing);
 			}
+		}
+	}
+
+	private void HitCrossing(GameObject crossing)
+	{
+		transform.position = new Vector3(crossing.transform.position.x, crossing.transform.position.y, 5);
+		crossing.GetComponent<Crossing>().m_active = true;
+
+		if (++m_hits >= 3)
+		{
+			int index = Random.Range(0, 3);
+			m_overlayActive = GameObject.Instantiate(m_overlays[index]);
+			m_hits = 0;
 		}
 	}
 }
