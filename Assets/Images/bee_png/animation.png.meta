@@ -1,0 +1,537 @@
+fileFormatVersion: 2
+guid: 7669fa2a5daa000418af7a9c1a89a733
+timeCreated: 1517084258
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bee_00000
+    21300002: bee_00001
+    21300004: bee_00002
+    21300006: bee_00003
+    21300008: bee_00004
+    21300010: bee_00005
+    21300012: bee_00006
+    21300014: bee_00007
+    21300016: bee_00008
+    21300018: bee_00009
+    21300020: bee_00010
+    21300022: bee_00011
+    21300024: bee_00012
+    21300026: bee_00013
+    21300028: bee_00014
+    21300030: bee_00015
+    21300032: bee_00016
+    21300034: bee_00017
+    21300036: bee_00018
+    21300038: bee_00019
+    21300040: bee_00020
+    21300042: bee_00021
+    21300044: bee_00022
+    21300046: bee_00023
+    21300048: bee_00024
+    21300050: bee_00025
+    21300052: bee_00026
+    21300054: bee_00027
+    21300056: bee_00028
+    21300058: bee_00029
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bee_00000
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1634
+        width: 344
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5113402}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00001
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1585
+        width: 344
+        height: 488
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5081967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00002
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 3602
+        width: 364
+        height: 492
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50406504}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00003
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1597
+        width: 344
+        height: 496
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00004
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 2114
+        width: 344
+        height: 501
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49501}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00005
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2095
+        width: 344
+        height: 504
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4920635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00006
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3588
+        width: 364
+        height: 506
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49011856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00007
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 3085
+        width: 362
+        height: 506
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49011856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00008
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 2619
+        width: 344
+        height: 504
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4920635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00009
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2075
+        width: 344
+        height: 499
+      alignment: 9
+      pivot: {x: 0.5, y: 0.496994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00010
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3601
+        width: 364
+        height: 493
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5030426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00011
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2601
+        width: 362
+        height: 486
+      alignment: 9
+      pivot: {x: 0.5, y: 0.51028806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00012
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1164
+        width: 344
+        height: 480
+      alignment: 9
+      pivot: {x: 0.5, y: 0.51666665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00013
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1148
+        width: 344
+        height: 473
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5243129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00014
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3130
+        width: 364
+        height: 469
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52878463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00015
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 2617
+        width: 362
+        height: 466
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53218883}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00016
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 1165
+        width: 344
+        height: 467
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53104925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00017
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1113
+        width: 344
+        height: 470
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5276596}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00018
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 3125
+        width: 364
+        height: 475
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5221053}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00019
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 2646
+        width: 362
+        height: 482
+      alignment: 9
+      pivot: {x: 0.5, y: 0.51452285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00020
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1623
+        width: 344
+        height: 489
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50715744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00021
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 2121
+        width: 344
+        height: 496
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00022
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 3592
+        width: 364
+        height: 502
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49402392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00023
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 3084
+        width: 362
+        height: 506
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49011856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00024
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 2576
+        width: 344
+        height: 506
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49011856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00025
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 2140
+        width: 344
+        height: 504
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4920635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00026
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 3593
+        width: 364
+        height: 501
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49501}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00027
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3089
+        width: 362
+        height: 497
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49899396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00028
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 1646
+        width: 344
+        height: 492
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50406504}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bee_00029
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1107
+        width: 344
+        height: 488
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5081967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

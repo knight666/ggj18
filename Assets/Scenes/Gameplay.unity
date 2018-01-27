@@ -285,6 +285,28 @@ Transform:
   m_PrefabParentObject: {fileID: 4637980525653964, guid: a8915efa7493d4f4b9cd2b7bb84ff40a,
     type: 2}
   m_PrefabInternal: {fileID: 550909685}
+--- !u!1 &188476120 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1737194418518006, guid: a8915efa7493d4f4b9cd2b7bb84ff40a,
+    type: 2}
+  m_PrefabInternal: {fileID: 550909685}
+--- !u!95 &188476123
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 188476120}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac16fcd90f22e514cb2020ebad466845, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &200308609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,6 +1041,12 @@ Prefab:
       propertyPath: m_audioSaxophone
       value: 
       objectReference: {fileID: 334165032}
+    - target: {fileID: 212435841681522196, guid: a8915efa7493d4f4b9cd2b7bb84ff40a,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f13ca8bdf6ae87a499399c0e9c235838,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a8915efa7493d4f4b9cd2b7bb84ff40a, type: 2}
   m_IsPrefabParent: 0
