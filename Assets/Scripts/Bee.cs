@@ -9,6 +9,10 @@ public class Bee : MonoBehaviour {
 
 	public float m_distanceMinimum = 1;
 	public float m_distanceMaximum = 2;
+	public List<GameObject> m_overlays = new List<GameObject>();
+	private GameObject m_overlayActive;
+
+	public int m_hits = 0;
 
 	void Start()
 	{
@@ -50,7 +54,8 @@ public class Bee : MonoBehaviour {
 			}
 		}
 
-		if (nearCrossings.Count > 0)
+		if (nearCrossings.Count > 0 &&
+			!m_overlayActive)
 		{
 			positionFlat.y -= 1;
 
@@ -86,16 +91,27 @@ public class Bee : MonoBehaviour {
 			if (Input.GetKeyDown(KeyCode.LeftArrow) &&
 				leftCrossing)
 			{
-				transform.position = leftCrossing.transform.position;
-				leftCrossing.GetComponent<Crossing>().m_active = true;
+				HitCrossing(leftCrossing);
 			}
 
 			if (Input.GetKeyDown(KeyCode.RightArrow) &&
 				rightCrossing)
 			{
-				transform.position = rightCrossing.transform.position;
-				rightCrossing.GetComponent<Crossing>().m_active = true;
+				HitCrossing(rightCrossing);
 			}
+		}
+	}
+
+	private void HitCrossing(GameObject crossing)
+	{
+		transform.position = new Vector3(crossing.transform.position.x, crossing.transform.position.y, 5);
+		crossing.GetComponent<Crossing>().m_active = true;
+
+		if (++m_hits >= 3)
+		{
+			int index = Random.Range(0, 3);
+			m_overlayActive = GameObject.Instantiate(m_overlays[index]);
+			m_hits = 0;
 		}
 	}
 }
