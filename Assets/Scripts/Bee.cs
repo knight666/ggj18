@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bee : MonoBehaviour {
 
@@ -19,9 +20,27 @@ public class Bee : MonoBehaviour {
 	private int m_hits = 0;
 	private int m_checkpointIndex = 0;
 
+	public GameObject m_buttonLeft;
+	private bool m_uiLeftClicked = false;
+	public GameObject m_buttonRight;
+	private bool m_uiRightClicked = false;
+
 	void Start()
 	{
 		m_hexGrid = m_hexGridInstance.GetComponent<HexGrid>();
+
+		m_buttonLeft.GetComponent<Button>().onClick.AddListener(UILeftClick);
+		m_buttonRight.GetComponent<Button>().onClick.AddListener(UIRightClick);
+	}
+
+	void UILeftClick()
+	{
+		m_uiLeftClicked = true;
+	}
+
+	void UIRightClick()
+	{
+		m_uiRightClicked = true;
 	}
 
 	void Update()
@@ -93,18 +112,21 @@ public class Bee : MonoBehaviour {
 				}
 			}
 
-			if (Input.GetKeyDown(KeyCode.LeftArrow) &&
+			if ((Input.GetKeyDown(KeyCode.LeftArrow) || m_uiLeftClicked) &&
 				leftCrossing)
 			{
 				HitCrossing(leftCrossing);
 			}
 
-			if (Input.GetKeyDown(KeyCode.RightArrow) &&
+			if ((Input.GetKeyDown(KeyCode.RightArrow) || m_uiRightClicked) &&
 				rightCrossing)
 			{
 				HitCrossing(rightCrossing);
 			}
 		}
+
+		m_uiLeftClicked = false;
+		m_uiRightClicked = false;
 	}
 
 	private void HitCrossing(GameObject crossing)
