@@ -12,7 +12,12 @@ public class Bee : MonoBehaviour {
 	public List<GameObject> m_overlays = new List<GameObject>();
 	private GameObject m_overlayActive;
 
-	public int m_hits = 0;
+	public GameObject m_audioDrums;
+	public GameObject m_audioPiano;
+	public GameObject m_audioSaxophone;
+
+	private int m_hits = 0;
+	private int m_checkpointIndex = 0;
 
 	void Start()
 	{
@@ -109,8 +114,31 @@ public class Bee : MonoBehaviour {
 
 		if (++m_hits >= 3)
 		{
-			int index = Random.Range(0, 3);
-			m_overlayActive = GameObject.Instantiate(m_overlays[index]);
+			m_overlayActive = GameObject.Instantiate(m_overlays[m_checkpointIndex]);
+
+			// Sorry David, but I don't know jack shit about audio mixing...
+
+			if (m_checkpointIndex == 0)
+			{
+				m_audioPiano.GetComponent<AudioSource>().mute = false;
+			}
+			else if (
+				m_checkpointIndex == 1)
+			{
+				m_audioDrums.GetComponent<AudioSource>().mute = false;
+			}
+			else if (
+				m_checkpointIndex == 2)
+			{
+				// TODO: Saxophone
+				//m_audioSaxophone.GetComponent<AudioSource>().mute = false;
+			}
+
+			if (++m_checkpointIndex > 2)
+			{
+				m_checkpointIndex = 0;
+			}
+
 			m_hits = 0;
 		}
 	}
