@@ -82,8 +82,8 @@ public class OpeningLogic : MonoBehaviour
 			var direction = path[0];
 			path.RemoveAt(0);
 
-			Arrow_Introduction_left.GetComponent<SpriteRenderer>().enabled = (direction == Pathing.Directions.Left);
-			Arrow_Introduction_right.GetComponent<SpriteRenderer>().enabled = (direction == Pathing.Directions.Right);
+			Arrow_Introduction_left.GetComponent<SpriteRenderer>().enabled = (direction == Directions.Left);
+			Arrow_Introduction_right.GetComponent<SpriteRenderer>().enabled = (direction == Directions.Right);
 
 			var endTime5 = Time.time + 2.0f;
 			while (Time.time < endTime5)
