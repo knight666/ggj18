@@ -26,6 +26,7 @@ public class Bee : MonoBehaviour {
 	public GameObject m_buttonRight;
 	private bool m_uiRightClicked = false;
 
+	List<Directions> m_path = new List<Directions>();
 	Directions m_nextDirection;
 
 	void Start()
@@ -35,10 +36,11 @@ public class Bee : MonoBehaviour {
 		m_buttonLeft.GetComponent<Button>().onClick.AddListener(UILeftClick);
 		m_buttonRight.GetComponent<Button>().onClick.AddListener(UIRightClick);
 
-		//Pathing.Initialize();
+		Pathing.Initialize();
 
-		m_nextDirection = Pathing.m_currentPath[0];
-		Pathing.m_currentPath.RemoveAt(0);
+		m_path = new List<Directions>(Pathing.m_currentPath);
+		m_nextDirection = m_path[0];
+		m_path.RemoveAt(0);
 
 		Debug.Log("nextDirection " + m_nextDirection.ToString());
 	}
@@ -187,8 +189,8 @@ public class Bee : MonoBehaviour {
 			m_hits = 0;
 		}
 
-		m_nextDirection = Pathing.m_currentPath[0];
-		Pathing.m_currentPath.RemoveAt(0);
+		m_nextDirection = m_path[0];
+		m_path.RemoveAt(0);
 
 		Debug.Log("nextDirection " + m_nextDirection.ToString());
 	}

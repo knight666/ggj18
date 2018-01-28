@@ -8,7 +8,7 @@ public enum Directions
 	Right
 };
 
-public class Pathing
+public class Pathing : MonoBehaviour
 {
 	public static Directions[][] m_paths = new Directions[3][] {
 		new Directions[] { Directions.Right, Directions.Right, Directions.Left, Directions.Left, Directions.Right, Directions.Left, Directions.Left, Directions.Right, Directions.Right },

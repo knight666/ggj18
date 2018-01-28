@@ -37,8 +37,6 @@ public class OpeningLogic : MonoBehaviour
 
 	IEnumerator ShowIntro()
 	{
-		var path = Pathing.m_currentPath;
-
 		Text_1.GetComponent<SpriteRenderer>().enabled = true;
 
 		var endTime1 = Time.time + 3.0f;
@@ -68,6 +66,7 @@ public class OpeningLogic : MonoBehaviour
 		Text_3.GetComponent<SpriteRenderer>().enabled = false;
 		IntroductionBG.GetComponent<SpriteRenderer>().enabled = true;
 
+		var path = new List<Directions>(Pathing.m_currentPath);
 		while (path.Count > 0)
 		{
 			Arrow_Introduction_left.GetComponent<SpriteRenderer>().enabled = false;
