@@ -31,6 +31,9 @@ public class Bee : MonoBehaviour {
 
 	public GameObject[] m_jars = new GameObject[3];
 
+	public GameObject m_flower;
+	private GameObject m_flowerInstance;
+
 	void Start()
 	{
 		m_hexGrid = m_hexGridInstance.GetComponent<HexGrid>();
@@ -67,6 +70,11 @@ public class Bee : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 5));
+		}
+
+		if (Input.GetKeyDown(KeyCode.Q))
+		{
+			StartCoroutine(ShowEnding());
 		}
 
 		var positionFlat = transform.position;
@@ -186,6 +194,8 @@ public class Bee : MonoBehaviour {
 				m_checkpointIndex == 2)
 			{
 				m_audioSaxophone.GetComponent<AudioSource>().mute = false;
+
+				StartCoroutine(ShowEnding());
 			}
 
 			if (++m_checkpointIndex > 3)
@@ -200,5 +210,24 @@ public class Bee : MonoBehaviour {
 		m_path.RemoveAt(0);
 
 		Debug.Log("nextDirection " + m_nextDirection.ToString());
+	}
+
+	IEnumerator ShowEnding()
+	{
+		var endTime2 = Time.time + 4.0f;
+		while (Time.time < endTime2)
+		{
+			yield return null;
+		}
+
+		m_flowerInstance = GameObject.Instantiate(m_flower);
+
+		var endTime1 = Time.time + 4.0f;
+		while (Time.time < endTime1)
+		{
+			yield return null;
+		}
+
+		SceneManager.LoadScene("Victory");
 	}
 }

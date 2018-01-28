@@ -678,7 +678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13843562, y: 0.91719824}
   m_AnchorMax: {x: 0.2075644, y: 0.98200005}
-  m_AnchoredPosition: {x: -0.099998474, y: 0}
+  m_AnchoredPosition: {x: -0.1000061, y: 0}
   m_SizeDelta: {x: -1.1499939, y: -0.8500061}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &277841658
@@ -1294,6 +1294,12 @@ Prefab:
       propertyPath: m_jars.Array.data[2]
       value: 
       objectReference: {fileID: 1875956376}
+    - target: {fileID: 114247766144295036, guid: a8915efa7493d4f4b9cd2b7bb84ff40a,
+        type: 2}
+      propertyPath: m_flower
+      value: 
+      objectReference: {fileID: 1301595796426006, guid: 39b33747526da3247a40dec04bf551fa,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a8915efa7493d4f4b9cd2b7bb84ff40a, type: 2}
   m_IsPrefabParent: 0
@@ -1962,7 +1968,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6c8c78a5dfe90774eaf31a4a5d3d4672, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 05ce249b69cdfbb4c8cf9b5478f047b9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3107,7 +3113,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23587124, y: 0.9226036}
   m_AnchorMax: {x: 0.29870957, y: 0.9873965}
-  m_AnchoredPosition: {x: 0.314003, y: -0.7999878}
+  m_AnchoredPosition: {x: 0.31399536, y: -0.7999878}
   m_SizeDelta: {x: 0.8500061, y: -0.8500061}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1875956378
