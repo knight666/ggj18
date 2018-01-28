@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OpeningLogic : MonoBehaviour
 {
@@ -25,8 +26,7 @@ public class OpeningLogic : MonoBehaviour
 
 		Pathing.Initialize();
 
-		StartCoroutine(ShowArrows());
-		//StartCoroutine(ShowIntro());
+		StartCoroutine(ShowIntro());
 	}
 
 	// Update is called once per frame
@@ -37,6 +37,8 @@ public class OpeningLogic : MonoBehaviour
 
 	IEnumerator ShowIntro()
 	{
+		var path = Pathing.m_currentPath;
+
 		Text_1.GetComponent<SpriteRenderer>().enabled = true;
 
 		var endTime1 = Time.time + 3.0f;
@@ -65,19 +67,14 @@ public class OpeningLogic : MonoBehaviour
 
 		Text_3.GetComponent<SpriteRenderer>().enabled = false;
 		IntroductionBG.GetComponent<SpriteRenderer>().enabled = true;
-	}
-
-	IEnumerator ShowArrows()
-	{
-		var path = Pathing.m_currentPath;
 
 		while (path.Count > 0)
 		{
 			Arrow_Introduction_left.GetComponent<SpriteRenderer>().enabled = false;
 			Arrow_Introduction_right.GetComponent<SpriteRenderer>().enabled = false;
 
-			var endTime2 = Time.time + 0.5f;
-			while (Time.time < endTime2)
+			var endTime4 = Time.time + 0.5f;
+			while (Time.time < endTime4)
 			{
 				yield return null;
 			}
@@ -88,8 +85,8 @@ public class OpeningLogic : MonoBehaviour
 			Arrow_Introduction_left.GetComponent<SpriteRenderer>().enabled = (direction == Pathing.Directions.Left);
 			Arrow_Introduction_right.GetComponent<SpriteRenderer>().enabled = (direction == Pathing.Directions.Right);
 
-			var endTime1 = Time.time + 2.0f;
-			while (Time.time < endTime1)
+			var endTime5 = Time.time + 2.0f;
+			while (Time.time < endTime5)
 			{
 				yield return null;
 			}
@@ -97,5 +94,13 @@ public class OpeningLogic : MonoBehaviour
 
 		Arrow_Introduction_left.GetComponent<SpriteRenderer>().enabled = false;
 		Arrow_Introduction_right.GetComponent<SpriteRenderer>().enabled = false;
+
+		var endTime6 = Time.time + 2.0f;
+		while (Time.time < endTime6)
+		{
+			yield return null;
+		}
+
+		SceneManager.LoadScene("Gameplay");
 	}
 }
