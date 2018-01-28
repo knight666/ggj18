@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: 635efd7abcc181349b8318f6d2688f57
+timeCreated: 1517142154
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: flower
+    21300002: flower_00000
+    21300004: flower_00001
+    21300006: flower_00002
+    21300008: flower_00003
+    21300010: flower_00004
+    21300012: flower_00005
+    21300014: flower_00006
+    21300016: flower_00007
+    21300018: flower_00008
+    21300020: flower_00009
+    21300022: flower_00010
+    21300024: flower_00011
+    21300026: flower_00012
+    21300028: flower_00013
+    21300030: flower_00014
+    21300032: flower_00015
+    21300034: flower_00016
+    21300036: flower_00017
+    21300038: flower_00018
+    21300040: flower_00019
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: flower_00000
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 3340
+        width: 857
+        height: 754
+      alignment: 9
+      pivot: {x: 0.4941657, y: 0.43435013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00001
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 3340
+        width: 857
+        height: 754
+      alignment: 9
+      pivot: {x: 0.4941657, y: 0.43435013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00002
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 3340
+        width: 857
+        height: 754
+      alignment: 9
+      pivot: {x: 0.4941657, y: 0.43435013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00003
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 3340
+        width: 857
+        height: 754
+      alignment: 9
+      pivot: {x: 0.4941657, y: 0.43435013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00004
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3335
+        width: 857
+        height: 759
+      alignment: 9
+      pivot: {x: 0.4941657, y: 0.4367589}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00005
+      rect:
+        serializedVersion: 2
+        x: 2579
+        y: 3330
+        width: 856
+        height: 764
+      alignment: 9
+      pivot: {x: 0.494743, y: 0.43913612}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00006
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 2579
+        width: 856
+        height: 759
+      alignment: 9
+      pivot: {x: 0.494743, y: 0.4367589}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00007
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 2578
+        width: 856
+        height: 759
+      alignment: 9
+      pivot: {x: 0.494743, y: 0.4367589}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00008
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2574
+        width: 856
+        height: 759
+      alignment: 9
+      pivot: {x: 0.494743, y: 0.4367589}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00009
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 2569
+        width: 856
+        height: 759
+      alignment: 9
+      pivot: {x: 0.494743, y: 0.4367589}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00010
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 1818
+        width: 856
+        height: 759
+      alignment: 9
+      pivot: {x: 0.494743, y: 0.4367589}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00011
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1817
+        width: 856
+        height: 759
+      alignment: 9
+      pivot: {x: 0.494743, y: 0.4367589}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00012
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1813
+        width: 856
+        height: 759
+      alignment: 9
+      pivot: {x: 0.494743, y: 0.4367589}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00013
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 1808
+        width: 856
+        height: 759
+      alignment: 9
+      pivot: {x: 0.494743, y: 0.4367589}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00014
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 3339
+        width: 857
+        height: 755
+      alignment: 9
+      pivot: {x: 0.4941657, y: 0.43509933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00015
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 1017
+        width: 849
+        height: 799
+      alignment: 9
+      pivot: {x: 0.49411073, y: 0.45869836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00016
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 985
+        width: 840
+        height: 830
+      alignment: 9
+      pivot: {x: 0.49345237, y: 0.4885542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00017
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 975
+        width: 836
+        height: 836
+      alignment: 9
+      pivot: {x: 0.49461722, y: 0.5065789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00018
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 138
+        width: 836
+        height: 835
+      alignment: 9
+      pivot: {x: 0.49342105, y: 0.5023952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: flower_00019
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 148
+        width: 836
+        height: 835
+      alignment: 9
+      pivot: {x: 0.49342105, y: 0.5011976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
