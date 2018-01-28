@@ -29,6 +29,8 @@ public class Bee : MonoBehaviour {
 	List<Directions> m_path = new List<Directions>();
 	Directions m_nextDirection;
 
+	public GameObject[] m_jars = new GameObject[3];
+
 	void Start()
 	{
 		m_hexGrid = m_hexGridInstance.GetComponent<HexGrid>();
@@ -57,6 +59,11 @@ public class Bee : MonoBehaviour {
 
 	void Update()
 	{
+		for (int i = 0; i < 3; ++i)
+		{
+			m_jars[i].GetComponent<Jar>().SetFilled(i < m_checkpointIndex);
+		}
+
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 5));
@@ -181,7 +188,7 @@ public class Bee : MonoBehaviour {
 				m_audioSaxophone.GetComponent<AudioSource>().mute = false;
 			}
 
-			if (++m_checkpointIndex > 2)
+			if (++m_checkpointIndex > 3)
 			{
 				m_checkpointIndex = 0;
 			}
