@@ -13,6 +13,9 @@ public class OpeningLogic : MonoBehaviour
 	public GameObject IntroductionBG;
 	public GameObject Arrow_Introduction_left;
 	public GameObject Arrow_Introduction_right;
+	public GameObject PianoBee;
+	public GameObject VintageDrumBee;
+	public GameObject SaxBee;
 
 	// Use this for initialization
 	void Start()
@@ -66,6 +69,9 @@ public class OpeningLogic : MonoBehaviour
 		Text_3.GetComponent<SpriteRenderer>().enabled = false;
 		IntroductionBG.GetComponent<SpriteRenderer>().enabled = true;
 
+		int index = 0;
+		int instrument = 0;
+
 		var path = new List<Directions>(Pathing.m_currentPath);
 		while (path.Count > 0)
 		{
@@ -89,12 +95,31 @@ public class OpeningLogic : MonoBehaviour
 			{
 				yield return null;
 			}
+
+			if (++index == 3)
+			{
+				if (instrument == 0)
+				{
+					PianoBee.GetComponent<AudioSource>().mute = false;
+				}
+				else if (instrument == 1)
+				{
+					VintageDrumBee.GetComponent<AudioSource>().mute = false;
+				}
+				else if (instrument == 2)
+				{
+					SaxBee.GetComponent<AudioSource>().mute = false;
+				}
+
+				instrument++;
+				index = 0;
+			}
 		}
 
 		Arrow_Introduction_left.GetComponent<SpriteRenderer>().enabled = false;
 		Arrow_Introduction_right.GetComponent<SpriteRenderer>().enabled = false;
 
-		var endTime6 = Time.time + 2.0f;
+		var endTime6 = Time.time + 6.0f;
 		while (Time.time < endTime6)
 		{
 			yield return null;
