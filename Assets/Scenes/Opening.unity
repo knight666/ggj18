@@ -378,6 +378,7 @@ GameObject:
   - component: {fileID: 621012167}
   - component: {fileID: 621012169}
   - component: {fileID: 621012168}
+  - component: {fileID: 621012170}
   m_Layer: 0
   m_Name: dance_00000
   m_TagString: Untagged
@@ -459,6 +460,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &621012170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 621012166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0845358be326a44ea76d385cf5a4478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 621012168}
+  speed: 1.8
 --- !u!1 &883468352
 GameObject:
   m_ObjectHideFlags: 0
