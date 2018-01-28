@@ -1,16 +1,19 @@
 version: 2
 importPivots: 1
 tpsheetFileNames:
+- Assets/Animations/dance/dance.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 - Assets/Images/bee_png/animation.tpsheet
 - Assets/Images/beeDance/dance.tpsheet
 - Assets/Sprites/Dynamic.tpsheet
 textureFileNames:
+- Assets/Animations/dance/dance.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 - Assets/Images/bee_png/animation.png
 - Assets/Images/beeDance/dance.png
 - Assets/Sprites/Dynamic.png
 normalmapFileNames:
+- 
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
 - 
 - 
